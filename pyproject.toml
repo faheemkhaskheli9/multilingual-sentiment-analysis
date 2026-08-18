@@ -1,0 +1,5 @@
+[project]
+name = "multilingual-sentiment-analysis"
+version = "0.1.0"
+description = "Multilingual Sentiment Analysis"
+requires-python = ">=3.10"
