@@ -1,0 +1,32 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Multilingual: preprocess text (ES)",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "src.main",
+      "args": ["preprocess", "--text", "Me encanta este teléfono, la batería dura muchísimo"],
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "name": "Multilingual: preprocess file",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "src.main",
+      "args": ["preprocess", "--file", "examples/sample_reviews.jsonl"],
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "name": "Multilingual: pytest",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "pytest",
+      "args": ["tests/", "-v"],
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}"
+    }
+  ]
+}
